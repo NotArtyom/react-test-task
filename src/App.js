@@ -8,19 +8,20 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from './store/reducers/rootReducer';
+import {Router} from 'react-router-dom';
+import { history } from './helpers/history';
 
 function App() {
   const store = createStore(rootReducer, applyMiddleware(thunk));
   return (
    <Provider store={store}>
     <div className="App">
-      <BrowserRouter>
+      <Router history={history}>
       <Switch>
-        <Route exact path="/" component={Layout} />
-        {/*<PrivateRoute exact path="/login" component={LoginPage} />*/}
+        <Route exact path="/login" component={LoginPage} />
+        <PrivateRoute exact path="/" component={Layout} />
       </Switch>
-      {/*<Layout name={"Проекты"}/>*/}
-      </BrowserRouter>
+      </Router>
     </div>
     </Provider>
   );

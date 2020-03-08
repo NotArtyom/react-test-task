@@ -12,15 +12,14 @@ import { Applist } from '../components/List';
   return(
     <div>
       <header>
-        <LoginPage/>
-      {/*  /!*<Navbar name={props.name}/>*!/*/}
+        <Navbar name={props.name}/>
        </header>
 
-      {/*<main>*/}
-      {/*  <div className='main-container'>*/}
-          {/*<Applist projects={this.props.projects}/>*/}
-        {/*</div>*/}
-      {/*</main>*/}
+      <main>
+        <div className='main-container'>
+          <Applist/>
+        </div>
+      </main>
     </div>
   )
 };

@@ -6,6 +6,6 @@ const ProjectSummary = (project) => {
       <span> {project.title} </span>
       </div>
     );
-}
+};
 
 export default ProjectSummary;

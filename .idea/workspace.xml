@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f546d966-41d7-4522-afb7-3fefaa88745f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/store/actions/authAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/history.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PrivateRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectSummary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/LoginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/projectActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/projectActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/projectReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/projectReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/authAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/authAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +85,7 @@
       <workItem from="1583152357562" duration="2000" />
       <workItem from="1583238753948" duration="7745000" />
       <workItem from="1583433366816" duration="107000" />
-      <workItem from="1583434752878" duration="59464000" />
+      <workItem from="1583434752878" duration="63855000" />
     </task>
     <servers />
   </component>
