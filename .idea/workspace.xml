@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f546d966-41d7-4522-afb7-3fefaa88745f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/helpers/history.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PrivateRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectSummary.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/LoginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/authAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/authAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +66,18 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -85,17 +92,48 @@
       <workItem from="1583152357562" duration="2000" />
       <workItem from="1583238753948" duration="7745000" />
       <workItem from="1583433366816" duration="107000" />
-      <workItem from="1583434752878" duration="63855000" />
+      <workItem from="1583434752878" duration="72168000" />
     </task>
+    <task id="LOCAL-00001" summary="Finished Login Logic. Working on Projects">
+      <created>1583692726767</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583692726768</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finished Login Logic. Working on Projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Login Logic. Working on Projects" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1583692725679">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1583692725679" />
     <state x="463" y="184" key="FileChooserDialogImpl" timestamp="1583433470886">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="184" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1583433470886" />
+    <state x="275" y="121" key="Vcs.Push.Dialog.v2" timestamp="1583692767102">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="121" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1583692767102" />
   </component>
 </project>

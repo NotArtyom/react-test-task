@@ -9,6 +9,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import { Box } from '@material-ui/core';
 import { signIn }  from '../store/actions/authAction';
 import { connect } from 'react-redux';
 
@@ -70,17 +71,24 @@ class LoginPage extends React.Component {
   render () {
     const {username, password} = this.state;
     return (
+      <Box mt='10%'>
        <div className="col-md-6 col-md-offset-3" >
-
-        <Container component="main" maxWidth="xs">
-          <CssBaseline/>
-          <div className={ classes.paper }>
-            <Avatar className={ classes.avatar }>
+         <Container component="main" maxWidth="xs">
+           <CssBaseline/>
+          <Box display='flex' justifyContent='center'>
+           <div className={ classes.paper }>
+             <Box display='flex' justifyContent='center'>
+               <Box mr='10px'>
+               <Avatar className={ classes.avatar }>
               <LockOutlinedIcon/>
-            </Avatar>
+              </Avatar>
+               </Box>
+               <Box display='flex' alignItems='center'>
             <Typography component="h1" variant="h5">
               Sign in
             </Typography>
+               </Box>
+             </Box>
             <form className={ classes.form } noValidate>
               <TextField
                 variant="outlined"
@@ -120,8 +128,10 @@ class LoginPage extends React.Component {
               </Button>
             </form>
           </div>
+          </Box>
         </Container>
        </div>
+      </Box>
     );
   }
 }
