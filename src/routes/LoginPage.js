@@ -1,5 +1,4 @@
 import React from 'react';
-//import { connect } from 'react-redux';
 
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
@@ -12,32 +11,6 @@ import Container from '@material-ui/core/Container';
 import { Box } from '@material-ui/core';
 import { signIn }  from '../store/actions/authAction';
 import { connect } from 'react-redux';
-
-//import { userActions } from '../_actions';
-
-const classes = makeStyles(theme => ({
-  paper: {
-
-    marginTop: theme.spacing(8),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  avatar: {
-    display:'flex',
-    alignItems: 'center',
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
-  },
-  form: {
-    width: '100%',
-    marginTop: theme.spacing(1),
-  },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-  },
-}));
-
 
 class LoginPage extends React.Component {
   constructor (props) {
@@ -135,6 +108,29 @@ class LoginPage extends React.Component {
     );
   }
 }
+
+const classes = makeStyles(theme => ({
+  paper: {
+
+    marginTop: theme.spacing(8),
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  avatar: {
+    display:'flex',
+    alignItems: 'center',
+    margin: theme.spacing(1),
+    backgroundColor: theme.palette.secondary.main,
+  },
+  form: {
+    width: '100%',
+    marginTop: theme.spacing(1),
+  },
+  submit: {
+    margin: theme.spacing(3, 0, 2),
+  },
+}));
 
 const mapStateToProps = state => {
   return {auth: state.auth}

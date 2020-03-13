@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Layout from './layout';
 import { BrowserRouter,Switch, Route } from 'react-router-dom';
 import { PrivateRoute } from './components/PrivateRoute';
 import LoginPage from './routes/LoginPage';
@@ -9,7 +8,9 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from './store/reducers/rootReducer';
 import {Router} from 'react-router-dom';
+
 import { history } from './helpers/history';
+import Project from './routes/Project';
 
 function App() {
   const store = createStore(rootReducer, applyMiddleware(thunk));
@@ -19,7 +20,8 @@ function App() {
       <Router history={history}>
       <Switch>
         <Route exact path="/login" component={LoginPage} />
-        <PrivateRoute exact path="/" component={Layout} />
+        <PrivateRoute exact path="/" component={Project} />
+        {/*<PrivateRoute exact path="/Project" component={Project}/>*/}
       </Switch>
       </Router>
     </div>

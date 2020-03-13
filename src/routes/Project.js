@@ -8,14 +8,14 @@ import { Container, Box, Button, Breadcrumbs } from '@material-ui/core';
 
 
 
- const Layout = props => {
+const Project = props => {
 
   return(
     <div>
       <header>
         <Navbar name="Проекты"/>
         {/*<Breadcrumbs></Breadcrumbs>*/}
-       </header>
+      </header>
 
       <main>
         <div className='main-container'>
@@ -30,4 +30,4 @@ import { Container, Box, Button, Breadcrumbs } from '@material-ui/core';
 };
 
 
- export default (Layout);
+export default (Project);

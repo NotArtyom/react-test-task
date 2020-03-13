@@ -1,9 +1,10 @@
 import { history } from '../../helpers/history';
+import consts from '../../helpers/consts';
 
 export const signIn = ({login, pass}) => (dispatch) => {
 
   dispatch({
-    type: 'requested'
+    type: consts.RequestedCredentials
   });
 
   console.log(login, pass);
@@ -19,12 +20,12 @@ export const signIn = ({login, pass}) => (dispatch) => {
       console.log(data);
       history.push('/');
       dispatch({
-        type: 'received',
+        type: consts.ReceivedCredentials,
         payload: data
       });
     }).catch(err => {
     dispatch({
-      type: 'rejected',
+      type: consts.RejectedCredentials,
       payload: err
     });
   });
