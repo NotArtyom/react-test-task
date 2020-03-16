@@ -37,12 +37,12 @@ class ProjectPage extends Component {
     console.log(this.state.data);
   }
 
+
   render () {
     return (
       <div>
         <header>
           <Navbar name="Проекты"/>
-          {/*<Breadcrumbs></Breadcrumbs>*/ }
         </header>
         <main>
           <div className='main-container'>

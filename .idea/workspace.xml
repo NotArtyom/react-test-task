@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f546d966-41d7-4522-afb7-3fefaa88745f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/routes/ProjectStructurePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/projectStructureAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/projectStructureReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectSummary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/consts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/ProjectPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/ProjectPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/rootReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +99,8 @@
       <workItem from="1584045711212" duration="18067000" />
       <workItem from="1584268895986" duration="1197000" />
       <workItem from="1584284464400" duration="11490000" />
-      <workItem from="1584359137995" duration="4673000" />
+      <workItem from="1584359137995" duration="7054000" />
+      <workItem from="1584393124267" duration="2598000" />
     </task>
     <task id="LOCAL-00001" summary="Finished Login Logic. Working on Projects">
       <created>1583692726767</created>
@@ -160,7 +167,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/App.js</url>
-          <line>16</line>
+          <line>17</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

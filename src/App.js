@@ -10,7 +10,8 @@ import rootReducer from './store/reducers/rootReducer';
 import {Router} from 'react-router-dom';
 
 import { history } from './helpers/history';
-import Project from './routes/ProjectPage';
+import ProjectPage from './routes/ProjectPage';
+import ProjectStructurePage from './routes/ProjectStructurePage';
 
 function App() {
   const store = createStore(rootReducer, applyMiddleware(thunk));
@@ -20,8 +21,8 @@ function App() {
       <Router history={history}>
       <Switch>
         <Route exact path="/login" component={LoginPage} />
-        <PrivateRoute exact path="/" component={Project} />
-        {/*<PrivateRoute exact path="/Project" component={Project}/>*/}
+        <PrivateRoute exact path="/" component={ProjectPage} />
+        <PrivateRoute exact path="/Project" component={ProjectStructurePage}/>*/}
       </Switch>
       </Router>
     </div>
