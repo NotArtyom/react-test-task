@@ -1,7 +1,6 @@
 import consts from '../../helpers/consts';
 
 export const getProject = () => (dispatch) =>{
-
   dispatch({
     type: consts.RequestedProject
   });
@@ -10,9 +9,8 @@ export const getProject = () => (dispatch) =>{
       'Content-Type': 'application/json',
       'Access-Token': localStorage.getItem('Access Token')
     }})
-
     .then(data => {return data.json()})
-    .then((data)=>{console.log(data);
+    .then((data)=>{
       dispatch({
         type: consts.ReceivedProject,
         payload: data});

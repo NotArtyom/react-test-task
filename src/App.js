@@ -10,7 +10,7 @@ import rootReducer from './store/reducers/rootReducer';
 import {Router} from 'react-router-dom';
 
 import { history } from './helpers/history';
-import Project from './routes/Project';
+import Project from './routes/ProjectPage';
 
 function App() {
   const store = createStore(rootReducer, applyMiddleware(thunk));

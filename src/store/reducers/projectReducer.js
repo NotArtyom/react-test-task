@@ -1,7 +1,7 @@
 import consts from '../../helpers/consts'
 
 const initState = {
-  project: {},
+  projects: {},
   fetching: false,
   fetched: false
 };
@@ -11,11 +11,12 @@ const projectReducer = (state = initState, action) => {
       return {...state, fetching: true};
     }
     case consts.ReceivedProject: {
+      console.log(action.payload.data);
       return {
         ...state,
         fetching: false,
         fetched: true,
-        project: action.payload
+        projects: action.payload.data
       };
     }
     case consts.RejectedProject: {
