@@ -8,20 +8,17 @@ class ProjectStructurePage extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      children: null
+      children: null,
+      //project: location.state
     };
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleSubmit(){
-
   }
 
   render () {
+    console.log(this.props);
     return (
       <div>
         <header>
-          <Navbar name="Проекты"/>
+          <Navbar name='Name' back='true'/>
           <Breadcrumbs></Breadcrumbs>
         </header>
         <main>

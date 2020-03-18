@@ -22,7 +22,7 @@ function App() {
       <Switch>
         <Route exact path="/login" component={LoginPage} />
         <PrivateRoute exact path="/" component={ProjectPage} />
-        <PrivateRoute exact path="/Project" component={ProjectStructurePage}/>*/}
+        <PrivateRoute exact path="/Project" component={ProjectStructurePage}/>}
       </Switch>
       </Router>
     </div>
