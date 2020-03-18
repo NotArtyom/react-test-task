@@ -11,6 +11,7 @@ const projectStructureReducer = (state = initState, action) => {
       return {...state, fetching: true};
     }
     case consts.ReceivedProjectStructure: {
+      console.log(action.payload.data);
       return {
         ...state,
         fetching: false,

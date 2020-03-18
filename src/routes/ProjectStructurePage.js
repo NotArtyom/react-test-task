@@ -16,7 +16,7 @@ class ProjectStructurePage extends Component {
   }
 
   componentDidMount () {
-   //   this.props.getStructure({projectId: this.state.project.id,root_structure_id: this.state.project.root_structure_id})
+      this.props.getStructure({projectId: this.state.project.id,root_structure_id: this.state.project.root_structure_id});
   }
 
   componentDidUpdate () {
@@ -37,7 +37,7 @@ class ProjectStructurePage extends Component {
         </header>
         <main>
           <div className='main-container'>
-            <ProjectList projects=''/>
+            <ProjectList projects={this.state.children}/>
           </div>
         </main>
       </div>
@@ -46,7 +46,7 @@ class ProjectStructurePage extends Component {
 }
 
 const mapStateToProps = state => {
-  return {projectStructure: state.projectStructure};
+  return {projectStructure: state.projectStructure.projectStructure};
 };
 
 const mapDispatchToProps = (dispatch) => {

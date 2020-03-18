@@ -1,18 +1,21 @@
 import consts from '../../helpers/consts';
 
-export const getStructure = ({projectId,root_structure_id}) => (dispatch) =>{
+export const getStructure = ({projectId, root_structure_id}) => (dispatch) => {
   dispatch({
     type: consts.RequestedProjectStructure
   });
-  fetch('https://cdsapi.netimob.com/api/project/' + projectId.toString() + '/project-structure/'+root_structure_id.toString(), { method : 'GET',headers: {
+  fetch('https://cdsapi.netimob.com/api/project/' + projectId.toString() + '/project-structure/' + root_structure_id.toString(), {
+    method: 'GET', headers: {
       'Content-Type': 'application/json',
       'Access-Token': localStorage.getItem('Access Token')
-    }})
-    .then(data => {return data.json()})
-    .then((data)=>{console.log(data);
+    }
+  })
+    .then(data => {return data.json();})
+    .then((data) => {//console.log(data);
       dispatch({
         type: consts.ReceivedProjectStructure,
-        payload: data});
+        payload: data
+      });
     }).catch(err => {
     dispatch({
       type: consts.RejectedProjectStructure,

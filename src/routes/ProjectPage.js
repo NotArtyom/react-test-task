@@ -34,7 +34,7 @@ class ProjectPage extends Component {
         data: this.props.project
       });
     }
-    console.log(this.state.data);
+    //console.log(this.state.data);
   }
 
   render () {
