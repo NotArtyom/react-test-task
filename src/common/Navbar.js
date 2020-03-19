@@ -24,13 +24,13 @@ export default function Navbar(props) {
   if (props.back == 'true') {
     return (
       <div className={ classes.root }>
-        <AppBar position="static" style={ {background: '#2196f3'} }>
+        <AppBar position="static" color="primary">
           <Toolbar>
             <Typography variant="h6" className={ classes.title }>
             <Box display='flex' alignItems='center' flexDirection='row'>
               <ArrowBackIcon onClick={()=> {history.goBack()}} cursor='pointer'/>
               <Box ml='10px'>
-              { props.number }
+              {/*{ props.number }*/}
               { props.name }
               </Box>
             </Box>
@@ -43,7 +43,7 @@ export default function Navbar(props) {
   else{
     return (
       <div className={ classes.root }>
-        <AppBar position="static" style={ {background: '#2196f3'} }>
+        <AppBar position="static" color="primary">
           <Toolbar>
             <Typography variant="h6" className={ classes.title }>
 

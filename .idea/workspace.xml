@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f546d966-41d7-4522-afb7-3fefaa88745f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/ProjectPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/ProjectPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProjectList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProjectSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectSummary.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/ProjectStructurePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/ProjectStructurePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/projectStructureAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/projectStructureAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/projectStructureReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/projectStructureReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +24,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1YXJidOIajDvsHRYbQskNRy8uRH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -98,7 +106,7 @@
       <workItem from="1584284464400" duration="11490000" />
       <workItem from="1584359137995" duration="7054000" />
       <workItem from="1584393124267" duration="2884000" />
-      <workItem from="1584458659507" duration="18445000" />
+      <workItem from="1584458659507" duration="35306000" />
     </task>
     <task id="LOCAL-00001" summary="Finished Login Logic. Working on Projects">
       <created>1583692726767</created>
