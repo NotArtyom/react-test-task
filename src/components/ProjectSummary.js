@@ -29,7 +29,8 @@ class ProjectSummary extends Component {
             <Box display='flex' alignItems='center' mr='20px'>
               <MoreVertIcon/>
             </Box>
-            <Box display='flex' flexDirection='column' flex='4'> <Box mb='20px' fontSize={ 15 }>{ this.props.project.title }</Box> {/*<InsertDriveFileOutlinedIcon/>*/ }
+            <Box display='flex' flexDirection='column' flex='4'> <Box mb='20px' fontSize={ 15 }>{ this.props.project.title }</Box>
+              {this.props.extra ? <InsertDriveFileOutlinedIcon/> : ""}
             </Box>
             <Box display='flex' flexDirection='row' flex='1' alignItems="center" justifyContent='space-between'>
               <Box display='flex' flex='2' alignItems="center" justifyContent='space-between'>
@@ -41,9 +42,7 @@ class ProjectSummary extends Component {
                    fontSize={ 15 }mr='2px' >{ this.props.project.notes_cnt_success }</Box>
               <NavigateNextIcon onClick={ this.handleClick } cursor='pointer'/>
               </Box>
-              <Box display='flex' justifyContent='flex-end' flex='1'>
-              <DeleteOutlineIcon color='error'/>
-              </Box>
+                {this.props.extra ?<Box display='flex' justifyContent='flex-end' flex='1'><DeleteOutlineIcon color='error'/></Box> : ""}
             </Box>
           </Box>
         </Box>

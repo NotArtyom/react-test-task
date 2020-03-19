@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function Navbar(props) {
   const classes = useStyles();
-  if (props.back == 'true') {
+  if (props.back) {
     return (
       <div className={ classes.root }>
         <AppBar position="static" color="primary">
