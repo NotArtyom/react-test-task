@@ -12,5 +12,9 @@ export default keyMirror({
 
   RejectedProjectStructure: null,
   RequestedProjectStructure: null,
-  ReceivedProjectStructure: null
+  ReceivedProjectStructure: null,
+
+  RejectedChildren: null,
+  RequestedChildren: null,
+  ReceivedChildren: null
 });

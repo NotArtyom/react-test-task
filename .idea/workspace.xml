@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f546d966-41d7-4522-afb7-3fefaa88745f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/childrenReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectSummary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/consts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/ProjectStructurePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/ProjectStructurePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/projectStructureAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/projectStructureAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/projectReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/projectReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/projectStructureReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/projectStructureReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/rootReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
@@ -50,6 +60,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -104,7 +115,15 @@
       <workItem from="1584284464400" duration="11490000" />
       <workItem from="1584359137995" duration="7054000" />
       <workItem from="1584393124267" duration="2884000" />
-      <workItem from="1584458659507" duration="42868000" />
+      <workItem from="1584458659507" duration="43702000" />
+      <workItem from="1584687146433" duration="2876000" />
+      <workItem from="1584717940207" duration="9786000" />
+      <workItem from="1584949293224" duration="11997000" />
+      <workItem from="1585159691727" duration="399000" />
+      <workItem from="1585219648519" duration="2000" />
+      <workItem from="1585229345358" duration="10000" />
+      <workItem from="1585285836520" duration="1521000" />
+      <workItem from="1585498899284" duration="10156000" />
     </task>
     <task id="LOCAL-00001" summary="Finished Login Logic. Working on Projects">
       <created>1583692726767</created>
@@ -145,6 +164,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Some GUI changes" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="409" y="195" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584950035853">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="409" y="195" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1584950035853" />
+    <state x="434" y="254" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1584834193131">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="434" y="254" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1584834193131" />
     <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1583759562664">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -165,6 +192,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1584474697092" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1584992131874">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1584992131874" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

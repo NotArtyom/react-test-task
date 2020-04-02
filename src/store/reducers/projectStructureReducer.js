@@ -27,6 +27,6 @@ const projectStructureReducer = (state = initState, action) => {
     }
     default: return state;
   }
-
 };
+
 export default projectStructureReducer

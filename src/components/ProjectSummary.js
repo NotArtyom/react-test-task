@@ -42,7 +42,7 @@ class ProjectSummary extends Component {
                    fontSize={ 15 }mr='2px' >{ this.props.project.notes_cnt_success }</Box>
               <NavigateNextIcon onClick={ this.handleClick } cursor='pointer'/>
               </Box>
-                {this.props.extra ?<Box display='flex' justifyContent='flex-end' flex='1'><DeleteOutlineIcon color='error'/></Box> : ""}
+                {this.props.extra ? <Box display='flex' justifyContent='flex-end' flex='1'><DeleteOutlineIcon color='error'/></Box> : ""}
             </Box>
           </Box>
         </Box>

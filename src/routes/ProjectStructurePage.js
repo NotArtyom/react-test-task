@@ -8,6 +8,7 @@ import TextField from '@material-ui/core/TextField';
 import SearchIcon from '@material-ui/icons/Search';
 import { connect } from 'react-redux';
 import { getStructure } from '../store/actions/projectStructureAction';
+import { getChildren } from '../store/actions/projectStructureAction';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import AccountTreeOutlinedIcon from '@material-ui/icons/AccountTreeOutlined'; // Структура
@@ -22,6 +23,8 @@ class ProjectStructurePage extends Component {
   constructor (props) {
     super(props);
     this.state = {
+      projReq: false,
+      childrenReq: false,
       children: null,
       project: this.props.location.state.project
     };
@@ -32,20 +35,34 @@ class ProjectStructurePage extends Component {
       projectId: this.state.project.id,
       root_structure_id: this.state.project.root_structure_id
     });
-  }
+    // this.setState({
+    //   projReq: false,
+    //   childrenReq: false
+    // });
+    }
 
   componentDidUpdate () {
-    if (this.state.children == null) {
+    if (this.state.children == null && this.props.projectStructure.fetched && !this.props.projectStructure.fetching) {
       this.setState({
-        children: this.props.projectStructure.children
+        children: this.props.projectStructure.projectStructure.children
+      });
+      console.log(this.props.projectStructure.projectStructure.children)
+    }
+
+     if (this.state.project.project_id && !this.props.childrenReceiver.fetched && !this.props.childrenReceiver.fetching && !this.state.childrenReq) {
+         this.props.getChildren({
+        projectId: this.state.project.project_id,
+        structureId: this.state.project.id
       });
     }
-    // if (!this.props.location.state.project.root_structure_id && ) {
-    //   this.props.getStructure({
-    //     projectId: this.props.location.state.project.project_id,
-    //     root_structure_id: this.props.location.state.project.id
-    //   });
-    // }
+
+       if (!this.state.childrenReq && this.props.childrenReceiver.fetched && !this.props.childrenReceiver.fetching) {
+         this.setState(prevState => ({
+           childrenReq: !prevState.childrenReq,
+           //projReq: false,
+           children: this.props.childrenReceiver.children.children
+         }));
+       }
   }
 
   render () {
@@ -82,7 +99,7 @@ class ProjectStructurePage extends Component {
                 <TextField fullWidth id="outlined-basic" label="Search..."/>
               </Box>
             </Box>
-            <ProjectList projects={this.state.children} extra={true}/>
+            <ProjectList projects={this.state.children} extra={true} />
           </div>
         </main>
       </div>
@@ -91,12 +108,13 @@ class ProjectStructurePage extends Component {
 }
 
 const mapStateToProps = state => {
-  return {projectStructure: state.projectStructure.projectStructure};
+  return {projectStructure: state.projectStructure, childrenReceiver: state.children};
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    getStructure: (payload) => dispatch(getStructure(payload))
+    getStructure: (payload) => dispatch(getStructure(payload)),
+    getChildren: (payload) => dispatch(getChildren(payload))
   };
 };
 

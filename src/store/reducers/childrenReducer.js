@@ -1,25 +1,25 @@
-import consts from '../../helpers/consts'
+import consts from '../../helpers/consts';
 
 const initState = {
-  projects: {},
+  children: {},
   fetching: false,
   fetched: false
 };
-const projectReducer = (state = initState, action) => {
+
+const childrenReducer = (state = initState, action) => {
   switch (action.type) {
-    case consts.RequestedProject: {
+    case consts.RequestedChildren: {
       return {...state, fetching: true};
     }
-    case consts.ReceivedProject: {
-      console.log(action.payload.data);
+    case consts.ReceivedChildren: {
       return {
         ...state,
         fetching: false,
         fetched: true,
-        projects: action.payload.data
+        children: action.payload.data
       };
     }
-    case consts.RejectedProject: {
+    case consts.RejectedChildren: {
       return {
         ...state,
         fetching: false,
@@ -30,5 +30,4 @@ const projectReducer = (state = initState, action) => {
   }
 
 };
-
-export default projectReducer
+export default childrenReducer

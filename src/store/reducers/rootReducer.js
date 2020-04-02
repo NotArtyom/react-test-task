@@ -1,12 +1,14 @@
 import authReducer from './authReducer';
 import projectReducer from './projectReducer';
 import { combineReducers } from 'redux';
-import projectStructureReducer from './projectStructureReducer';
+import  projectStructureReducer from './projectStructureReducer';
+import childrenReducer from './childrenReducer';
 
 const rootReducer = combineReducers({
   auth: authReducer,
   project: projectReducer,
-  projectStructure: projectStructureReducer
+  projectStructure: projectStructureReducer,
+  children: childrenReducer
 });
 
 export default rootReducer
